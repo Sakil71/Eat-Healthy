@@ -217,3 +217,54 @@ h1 {
 .services-section:hover h1 {
     letter-spacing: 0.1em;
 }
+
+/* Experiences Gellery */
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.experiences-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.image-and-comment {
+    border-radius: 5px;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    text-align: justify;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.experiences-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 5px 10px 0 0;
+}
+
+.user-name {
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer span {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-weight: 700;
+    font-size: 20px;
+}
