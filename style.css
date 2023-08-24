@@ -29,7 +29,7 @@ body {
 }
 
 .to-book:hover {
-    background-image: linear-gradient(to right, rgb(85, 85, 114), rgb(45, 45, 150));
+    background-image: linear-gradient(to right, red, orange);
 
 }
 
@@ -80,12 +80,18 @@ body {
 }
 
 /* Services */
+.recipies-section {
+    display: flex;
+    margin-bottom: 100px;
+}
+
 .services-section {
     width: 40%;
     text-align: justify;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding: 10px;
+    margin: 0 10px;
     border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .services-img {
@@ -99,4 +105,8 @@ body {
 .ratings {
     display: flex;
     justify-content: space-between;
+}
+
+.ratings span {
+    font-family: 'Qwitcher Grypen', cursive;
 }
