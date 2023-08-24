@@ -1,0 +1,102 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 5px 0;
+    font-weight: 700;
+}
+
+.services a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: rgba(5, 5, 65, 0.936);
+}
+
+.services a:hover {
+    color: red;
+}
+
+.to-book {
+    text-decoration: none;
+    padding: 4px 20px;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-image: linear-gradient(to right, rgb(3, 3, 38), rgb(66, 66, 158));
+}
+
+.to-book:hover {
+    background-image: linear-gradient(to right, rgb(85, 85, 114), rgb(45, 45, 150));
+
+}
+
+
+/* banner */
+.banner-img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%), url(images/food/Project\ Cover2.png);
+}
+
+.banner-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.restaurant {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 120px;
+    margin: 0;
+}
+
+.banner-text>p {
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.owner {
+    position: absolute;
+    color: navy;
+    font-weight: 700;
+    bottom: 0;
+    right: 10px;
+    font-family: 'Qwitcher Grypen', cursive;
+}
+
+/* Services */
+.services-section {
+    width: 40%;
+    text-align: justify;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.services-img {
+    width: 100%;
+}
+
+.heart-img {
+    width: 10px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
