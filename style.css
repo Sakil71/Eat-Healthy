@@ -72,9 +72,12 @@ body {
 
 .owner {
     position: absolute;
-    color: navy;
+    text-decoration: underline;
+    color: rgb(3, 3, 46);
     font-weight: 700;
     bottom: 0;
+    background-color: rgb(117, 143, 166);
+    border-radius: 3px;
     right: 10px;
     font-family: 'Qwitcher Grypen', cursive;
 }
@@ -145,7 +148,7 @@ body {
     background-color: rgb(148, 62, 62);
 }
 
-/* ------For Animation------- */
+/* ------Animation for food service card------- */
 
 @property --a {
     syntax: '<angle>';
@@ -154,21 +157,21 @@ body {
 }
 
 @keyframes animate {
-    0% {
+    100% {
         --a: 0deg;
     }
 
-    100% {
+    0% {
         --a: 360deg;
     }
 }
 
 @keyframes rotate {
-    0% {
+    100% {
         transform: rotate(0deg);
     }
 
-    100% {
+    0% {
         transform: rotate(360deg);
     }
 }
@@ -216,9 +219,14 @@ h1 {
 
 .services-section:hover h1 {
     letter-spacing: 0.1em;
+    transition-delay: 0.1s;
 }
 
 /* Experiences Gellery */
+
+.comment-section {
+    margin-bottom: 100px;
+}
 
 .placeholder {
     display: flex;
@@ -232,7 +240,7 @@ h1 {
     align-content: center;
     gap: 20px;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 .image-and-comment {
@@ -252,6 +260,8 @@ h1 {
     height: 70px;
     border-radius: 50%;
     margin: 5px 10px 0 0;
+    padding: 1px;
+    border: 2px solid rgb(68, 68, 195);
 }
 
 .user-name {
@@ -261,10 +271,123 @@ h1 {
 /* Footer */
 footer {
     text-align: center;
+    margin-top: 100px;
 }
 
 footer span {
     font-family: 'Qwitcher Grypen', cursive;
     font-weight: 700;
     font-size: 20px;
+}
+
+/* Events */
+
+.find-events {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%), url(images/Events/e9.jpg);
+}
+
+.events-text {
+    color: whitesmoke;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.events-text h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 80px;
+    letter-spacing: 0.35em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.select-events {
+    font-size: 20px;
+}
+
+.select-events select {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px;
+    color: #00008B;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.select-events option {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.events-card {
+    width: 96%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.events-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.events-card-text h1,
+h2 {
+    color: #12126a;
+}
+
+.events-card-text span {
+    color: orangered;
+
+}
+
+.upcoming {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Animation for events card */
+
+.events-card:hover {
+    position: relative;
+    position: relative;
+    background: repeating-conic-gradient(from var(--a), var(--clr1) 0%, var(--clr1) 5%, transparent 5%, transparent 40%, var(--clr1) 50%);
+    animation: animate 2s linear infinite;
+}
+
+.events-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a), var(--clr2) 0%, var(--clr2) 5%, transparent 5%, transparent 40%, var(--clr2) 50%);
+    animation: animate 2s linear infinite;
+    animation-delay: -0.2s;
+}
+
+.events-card:hover::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    /* background: whitesmoke; */
 }
