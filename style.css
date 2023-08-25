@@ -3,6 +3,11 @@ body {
 }
 
 /* navbar */
+#navbar-section {
+    position: sticky;
+    top: 20px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -282,6 +287,10 @@ footer span {
 
 /* Events */
 
+.event-section {
+    margin-bottom: 150px;
+}
+
 .find-events {
     position: relative;
     height: 350px;
@@ -325,9 +334,8 @@ footer span {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.select-events option {
-    font-size: 16px;
-    font-weight: 700;
+option:nth-child(2n) {
+    color: red;
 }
 
 .events-card {
@@ -390,4 +398,54 @@ h2 {
     position: absolute;
     inset: 3px;
     /* background: whitesmoke; */
+}
+
+/* Children's Park */
+
+.childrens-park {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), url(images/children/ch6.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.chldrens-text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: whitesmoke;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 40px;
+    letter-spacing: 0.3em;
+    transform: translate(-10%, -40%);
+    width: 80%;
+    padding: 20px;
+    z-index: 2;
+}
+
+.swimming {
+    position: absolute;
+    top: -55px;
+    right: 20%;
+    transform: translate(-10%, 0);
+}
+
+#water {
+    position: relative;
+    top: -160px;
+}
+
+#ring {
+    position: relative;
+    z-index: 2;
+    top: -75px;
+}
+
+#boy {
+    position: relative;
+    z-index: 3;
 }
