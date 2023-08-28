@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -48,7 +52,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%), url(../images/food/Project\ Cover2.png);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%), url(/images/food/Project\ Cover2.png);
 }
 
 .banner-text {
@@ -227,7 +231,19 @@ h1 {
     transition-duration: 1s;
 }
 
-/* Experiences Gellery */
+/* Experiences Gellery / Comment Section */
+.coment {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.coment:hover,
+.image-and-comment:hover {
+    overflow: visible;
+}
 
 .comment-section {
     margin-bottom: 100px;
@@ -440,7 +456,6 @@ h2 {
     position: absolute;
     top: -55px;
     right: 20%;
-    transform: translate(-10%, 0);
 }
 
 #water {
@@ -465,7 +480,7 @@ h2 {
 
 .childrens {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -484,4 +499,73 @@ h2 {
 
 .children-card img:hover {
     transform: scale(1.2);
+}
+
+/* Media Query */
+
+
+@media screen and (max-width: 576px) {
+    .childrens {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .events {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experiences-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recipies-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .restaurant {
+        font-size: 60px;
+    }
+
+    .banner-text {
+        width: 100%;
+        margin: 20px 0 0 60px;
+    }
+
+    .quote {
+        font-size: 10px;
+    }
+
+    .events-text h1 {
+        font-size: 30px;
+        color: black;
+    }
+
+    .events-text p,
+    small {
+        font-size: 10px;
+        color: black;
+    }
+
+
+    .events-text {
+        left: 180px;
+    }
+
+    .find-events {
+        height: 150px;
+        background: none;
+    }
+
+    .owner {
+        display: none;
+    }
+
+    .chldrens-text {
+        font-size: 10px;
+        top: 10%;
+        left: 10%;
+    }
 }
